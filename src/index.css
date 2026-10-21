@@ -230,7 +230,7 @@ button.text-link {
 button.text-link:hover { color: var(--gold-light); }
 
 .banner {
-  display: block; width: 100%; height: auto; max-height: 70vh; object-fit: contain; border-radius: 24px; margin-bottom: 20px;
+  display: block; width: 100%; max-width: 528px; height: auto; max-height: 70vh; object-fit: contain; border-radius: 24px; margin: 0 auto 20px;
   border: 1px solid var(--border); box-shadow: 0 24px 60px -12px rgba(0, 0, 0, .65), 0 0 0 6px rgba(var(--accent-rgb), .06);
   animation: rise .8s var(--ease) both;
 }
@@ -248,3 +248,7 @@ button.swatch[data-active="true"] { border-color: var(--text); box-shadow: 0 0 0
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+.suggestions { list-style: none; margin: -6px 0 14px; padding: 4px; background: var(--option-bg); border: 1px solid var(--border); border-radius: 12px; }
+.suggestions button { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; width: 100%; padding: 10px 12px; background: none; border: 0; border-radius: 8px; color: var(--text); text-align: left; cursor: pointer; }
+.suggestions button:hover, .suggestions button:focus-visible { background: var(--field); }
